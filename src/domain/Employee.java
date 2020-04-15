@@ -1,6 +1,9 @@
 package domain;
 public class Employee {
-
+    /**
+     * Get info about Employee
+     * @return info about Employee (string)
+     */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
@@ -14,6 +17,13 @@ public class Employee {
 
    // private static int employeesCount = 0;
 
+    /**
+     * Initialize Employee
+     * @param name Name of employee
+     * @param jobTitle Job of employee
+     * @param level Level of employee
+     * @param dept Dept of employee
+     */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -30,6 +40,9 @@ public class Employee {
         this.dept = dept;
     }
 
+    /**
+     * Assign ID to Employee
+     */
     public Employee() {
         ID = (int)(Math.random()*1000);
 //        if (ID > 10000) {
@@ -37,6 +50,10 @@ public class Employee {
 //        }
     }
 
+    /**
+     * Assing job to Employee
+     * @param job job of Employee
+     */
     public void setJobTitle(String job) {
         jobTitle = job;
     }
